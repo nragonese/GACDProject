@@ -16,22 +16,20 @@ lines 8-25 create the initial tables requried for the analysis below is a descri
 * x_train - same as above but for the train group
 
 
-#creates two data frames with all of the tests and train measurments as well as their associated subjectIDs and ACtivity IDs, as well as add a variable to identify test and train data when the tables are combined
+lines 28-29 creates two data frames with all of the tests and train measurments as well as their associated subjectIDs and Activity IDs. those lines also add a variable to each table,in order to identify test and train data when the tables are combined.
 
-#change data frame to tibble to use tidyverse functions
+lines 32-33 change the data frames to tibbles, so that we can use tidyverse functions.
 
-#select only the mean and standard deviation measurements
+lines 36-37 select on the columns that corresponed to mean and standard deviation measurements.
 
-#all of the measurement variables are rows that need to be in one column to be tidy data
+lines 40-41 data the variables that are in rows and put them into one column. the one column becomes a list of the different types of measurements.
 
-#add in the activity names
+lines 44-45 join the activity_labels table, so that we can have activity name in the tables.
 
-#drop activity ID because it's essentially a duplicate column with activity
+lines 48-49 drop the activity ID label, as we have the activity name and no longer need the ID.
 
-#combine the train and test data into one table
+line 52 combines the test and train data into one table: total_data
 
-#create a tibble with average of each variable for each activity and each subject
+lines 55-58 create a tibble with an average of each variable for each activity and each subject.
 
-
-
-#writetables to text, be sure to set working directory to wherever you want to save them
+lines 62-63 write the final two tables to csvs in the current working directory.
