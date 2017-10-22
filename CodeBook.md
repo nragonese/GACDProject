@@ -2,7 +2,7 @@
 
 * the file must be unzipped before it can be used
 
-*all packages used were from the tidyverse library
+* all packages used were from the tidyverse library
 
 lines 8-25 create the initial tables requried for the analysis below is a description of each table:
 
