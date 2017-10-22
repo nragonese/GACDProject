@@ -59,5 +59,4 @@ summarise(average = mean(acceleration))
 
 
 #writetables to text, be sure to set working directory to wherever you want to save them
-write.csv(total_data,"total_data.csv")
-write.csv(total_data,"total_data.csv")
+write.table(total_data2,"total_data2.txt", row.name = FALSE)
