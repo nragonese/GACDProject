@@ -6,14 +6,14 @@
 
 lines 8-25 create the initial tables requried for the analysis below is a description of each table:
 
-*features - table that has 1 column with unique IDs for each feature and another column with the description for each feature
-*activity_lables - activity table that has 1 column with the activity IDs and another column with the description of the activity
-*subject_test - a list of the subject IDs that correspond to each row entry in the x_test table
-*y_test - a list of the activity IDs that correspond to each row entry in the y_test table
-*x_test - a list of all measurements from the test group, with each row being measurments unique to a subject and an activity and each column being a type of acceleration measurement.
-* subject_train - same as above but for the train group
-*y_train - same as above but for the train group
-*x_train - same as above but for the train group
+* features - table that has 1 column with unique IDs for each feature and another column with the description for each feature
+* activity_lables - activity table that has 1 column with the activity IDs and another column with the description of the activity
+* subject_test - a list of the subject IDs that correspond to each row entry in the x_test table
+* y_test - a list of the activity IDs that correspond to each row entry in the y_test table
+* x_test - a list of all measurements from the test group, with each row being measurments unique to a subject and an activity and each column being a type of acceleration measurement.
+*  subject_train - same as above but for the train group
+* y_train - same as above but for the train group
+* x_train - same as above but for the train group
 
 
 #creates two data frames with all of the tests and train measurments as well as their associated subjectIDs and ACtivity IDs, as well as add a variable to identify test and train data when the tables are combined
