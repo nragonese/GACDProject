@@ -12,7 +12,7 @@ Below are a list of the files contained within the Repository, as well as a desc
 
   the final output is the tables total_data(steps 1-4) and total_data2(step 5).
 
-CodeBook.md
+## CodeBook.md
 
   contains a description of all of the variables used and manipulations performed in creating total_data and total_data2.
   
