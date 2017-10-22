@@ -18,9 +18,9 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Below are a list of the files contained within the Repository, as well as a description.
+## Files in Repository
 
-## run_Analysis.R 
+### run_Analysis.R 
 
   the final script that downloads, cleans, and summarizes the data set. It meets the requirments set within the coursera project:
 
@@ -32,9 +32,9 @@ Below are a list of the files contained within the Repository, as well as a desc
 
   the final output is the tables total_data(steps 1-4) and total_data2(step 5).
 
-## CodeBook.md
+### CodeBook.md
 
   contains a description of all of the variables used and manipulations performed in creating total_data and total_data2.
   
-## total_data2.txt
+### total_data2.txt
   a txt file of the table output from step 5 of the analysis
