@@ -16,12 +16,5 @@ Below are a list of the files contained within the Repository, as well as a desc
 
   contains a description of all of the variables used and manipulations performed in creating total_data and total_data2.
   
-## total_data.txt
-
-  a txt file of the table output from steps 1-4 of the analysis.
-  
 ## total_data2.txt
   a txt file of the table output from step 5 of the analysis
- 
-## getdata%2Fprojectfiles%2FUCI HAR Dataset
-  two versions with the zipped and unzipped data sets downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
