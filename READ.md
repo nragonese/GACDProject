@@ -1,6 +1,6 @@
 Below are a list of the files contained within the Repository, as well as a description.
 
-run_Analysis.R#H1 
+#run_Analysis.R 
 
   the final script that downloads, cleans, and summarizes the data set. It meets the requirments set within the coursera project:
 
