@@ -1,27 +1,27 @@
-#Data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip was saved on the desktop
+#Data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 #be sure to unzip files first
 
 #packagesused
 library(tidyverse)
 
-#Create all tables, files were stored on my desktop, these file paths need to be replaced with wherever you're storing the zip file
+#set working directory to where you have files stored (features.txt,activity_labels.txt,subject_test.txt,Y_test.txt,X_test.txt,subject_train.txt,y_train.txt,x_train.txt)
 
 #create a features table that has 1 column with unique IDs for each feature and another column with the description for each feature
-features <- read.table("C:\\UserData\\OneDrive - Red Ventures\\Desktop\\getdata%2Fprojectfiles%2FUCI HAR Dataset\\UCI HAR Dataset\\features.txt", header = FALSE, col.names = c("featureID","feature"))
+features <- read.table("features.txt", header = FALSE, col.names = c("featureID","feature"))
 
 #create an activity table that has 1 column with the activity IDs and another column with the description of the activity
-activity_labels <- read.table("C:\\UserData\\OneDrive - Red Ventures\\Desktop\\getdata%2Fprojectfiles%2FUCI HAR Dataset\\UCI HAR Dataset\\activity_labels.txt", header = FALSE, col.names = c("activityID","activity"))
+activity_labels <- read.table("activity_labels.txt", header = FALSE, col.names = c("activityID","activity"))
 
 #extracts all of the test data, where subject_test is the subjectID, y_test is the activityID correspending to the activities in activity_label, and x_test are all of the measurements for the test group
-subject_test <- read.table("C:\\UserData\\OneDrive - Red Ventures\\Desktop\\getdata%2Fprojectfiles%2FUCI HAR Dataset\\UCI HAR Dataset\\test\\subject_test.txt", header = FALSE, col.names = "subjectID")
-y_test <- read.table("C:\\UserData\\OneDrive - Red Ventures\\Desktop\\getdata%2Fprojectfiles%2FUCI HAR Dataset\\UCI HAR Dataset\\test\\Y_test.txt", header = FALSE, col.names = "activityID")
-x_test <- read.table("C:\\UserData\\OneDrive - Red Ventures\\Desktop\\getdata%2Fprojectfiles%2FUCI HAR Dataset\\UCI HAR Dataset\\test\\X_test.txt", header = FALSE, col.names = features[,2])
+subject_test <- read.table("subject_test.txt", header = FALSE, col.names = "subjectID")
+y_test <- read.table("Y_test.txt", header = FALSE, col.names = "activityID")
+x_test <- read.table("X_test.txt", header = FALSE, col.names = features[,2])
 
 #extracts all of the train data, labels are the same as the test data
-subject_train <- read.table("C:\\UserData\\OneDrive - Red Ventures\\Desktop\\getdata%2Fprojectfiles%2FUCI HAR Dataset\\UCI HAR Dataset\\train\\subject_train.txt", header = FALSE, col.names = "subjectID")
-y_train <- read.table("C:\\UserData\\OneDrive - Red Ventures\\Desktop\\getdata%2Fprojectfiles%2FUCI HAR Dataset\\UCI HAR Dataset\\train\\y_train.txt", header = FALSE, col.names = "activityID")
-x_train <- read.table("C:\\UserData\\OneDrive - Red Ventures\\Desktop\\getdata%2Fprojectfiles%2FUCI HAR Dataset\\UCI HAR Dataset\\train\\x_train.txt", header = FALSE, col.names = features[,2])
+subject_train <- read.table("subject_train.txt", header = FALSE, col.names = "subjectID")
+y_train <- read.table("y_train.txt", header = FALSE, col.names = "activityID")
+x_train <- read.table("x_train.txt", header = FALSE, col.names = features[,2])
 
 
 #creates two data frames with all of the tests and train measurments as well as their associated subjectIDs and ACtivity IDs, as well as add a variable to identify test and train data when the tables are combined
